@@ -50,8 +50,8 @@
         "format": [
             "vendor/bin/rector",
             "vendor/bin/pint"
-            
         ],
+        "pest": "pest",
         "dev": [
             "Composer\\Config::disableProcessTimeout",
             "npx concurrently -c \"#93c5fd,#c4b5fd,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1 --timeout=0\" \"npm run dev\" --names='server,queue,vite'"
